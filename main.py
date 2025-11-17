@@ -20,16 +20,17 @@ def handle_conversation():
         if user_input.lower() == 'exit':
             print("Goodbye!")
             break
+
         result = chain.invoke({"context": context, "question": user_input})
-        
         print("Bot: ", result)
         context += f"\nUser: {user_input}\nChatGBT: {result}"
+
         
 if __name__ == "__main__":
         handle_conversation()
           
         
-        
+ 
 
 
 
