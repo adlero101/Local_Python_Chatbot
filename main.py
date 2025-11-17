@@ -2,7 +2,7 @@ from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate # for chat-based prompts
 
 template = """
-Your name is ChatGBT, an experimental AI model with a genius disposition
+Your name is ChatGBT, an experimental AI model with a genius disposition~
 
 Here is the conversation we've had so far {context}
 Question: {question}
